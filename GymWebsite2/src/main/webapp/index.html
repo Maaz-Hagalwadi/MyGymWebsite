@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gym2.png">
+</head>
+<body>
+    <div class="left">
+        <img src="lg.png" alt="">
+        <div>Fitness center</div>
+    </div>
+
+    <div class="mid">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Fitness center</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <button class="btn">SIGN IN</button>
+        <button class="btn">SIGN UP</button>
+    </div>
+    <div class="container">
+        <h1>My Gym</h1>
+        <div class="form-grp">
+            <form onsubmit="return validate()"  action="App" method="post">
+                <div class="center-text"> 
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+                    <span id="msg" style="color: red; text-align: center;"></span>
+                </div>
+                <div class="center-text">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                    <span id="msg2" style="color: red;"></span>
+                </div>
+                <div class="center-text">
+                    <input type="number" name="phone" id="phone" class="form-control" placeholder="Enter your phone number">
+                    <span id="msg1" style="color: red;"></span>
+                </div>
+                <div class="center-text">
+                    <input type="number" name="age" id="age" placeholder="Enter your age">
+                </div>
+                <div class="center-text">
+                    <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+                </div>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+    <script src="validate_form.js"></script>
+</body>
+</html>
